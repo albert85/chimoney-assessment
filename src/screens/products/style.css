@@ -1,0 +1,8 @@
+.container > div > div:hover {
+  box-shadow: 1px 5px 5px gray;
+  cursor: pointer;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
