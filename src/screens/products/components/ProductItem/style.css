@@ -4,3 +4,9 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
+.add-cart-btn {
+  width: 100%;
+  padding: 1rem 2rem !important;
+}
+

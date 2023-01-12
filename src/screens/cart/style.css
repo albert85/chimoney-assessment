@@ -1,0 +1,76 @@
+
+.info-section {
+  height: 100vh;
+}
+
+.checkout-info {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.gift-order {
+  display: flex;
+  align-items: center;
+}
+
+.gift-order p {
+  font-size: 12px;
+}
+
+.checkout-btn-a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.checkout-btn {
+  background-color: gold !important;
+  width: 100% !important;
+  margin-top: 1rem !important;
+  text-transform: none !important;
+  color: black !important;
+  border-radius: 0.5rem !important;
+}
+
+.cart-desc {
+  background-color: white;
+  min-height: 500px;
+  padding: 1rem;
+}
+
+.decrease-btn {
+  background-color: red !important;
+  color: white !important;
+  height: 30px;
+}
+
+.increase-btn {
+  background-color: green !important;
+  color: white !important;
+  height: 30px;
+}
+
+.confirm-modal {
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  background-color: white;
+  padding: 2rem;
+}
+
+.confirm-btn {
+  width: 40%;
+}
+
+.cancel-btn {
+  background-color: red !important;
+  color: white !important;
+  margin-right: 2px !important;
+}
+
+.confirm-btn-btn {
+  background-color: green !important;
+  color: white !important;
+}
+

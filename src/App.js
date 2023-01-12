@@ -3,29 +3,35 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Container from '@mui/material/Container'
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
 import Products from './screens/products';
-import NavBar from './common/nav';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CartContext from './context/Cart';
+import Cart from './screens/cart';
+import Checkout from './screens/checkout';
 
 
 
 function App() {
   return (
-    <Container className='app'>
-      <NavBar />
+    <CartContext>
+    <div className='app'>
     <Router>
       <Routes>
         <Route path='/' element={<Products />}/>
         <Route path='/:productId' />
-        <Route path='/checkout' />
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </Router>
-    </Container>
+    <ToastContainer />
+    </div>
+    </CartContext>
   );
 }
 
